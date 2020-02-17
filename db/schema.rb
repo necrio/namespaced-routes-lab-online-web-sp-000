@@ -34,5 +34,5 @@ ActiveRecord::Schema.define(version: 20200217170656) do
     t.integer  "artist_id"
     t.index ["artist_id"], name: "index_songs_on_artist_id"
   end
-
+  add_index "songs", ["artist_id"], name: "index_songs_on_artist_id"
 end
